@@ -7,6 +7,7 @@ import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
 import OthentStrategy from "@arweave-wallet-kit/othent-strategy";
 import BrowserWalletStrategy from "@arweave-wallet-kit/browser-wallet-strategy";
 import WebWalletStrategy from "@arweave-wallet-kit/webwallet-strategy";
+import AoSyncStrategy from "@vela-ventures/aosync-strategy";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           new OthentStrategy(),
           new BrowserWalletStrategy(),
           new WebWalletStrategy(),
+          new AoSyncStrategy(),
         ],
       }}
     >
